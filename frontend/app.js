@@ -38,7 +38,7 @@ async function sendMessage(text = null) {
   addMessage(message, "user");
   input.value = "";
 
-  console.log("📤 Sending to backend:", message);
+  console.log("Sending to backend:", message);
 
   try {
     const response = await fetch(API_URL, {
@@ -52,7 +52,7 @@ async function sendMessage(text = null) {
     }
 
     const data = await response.json();
-    console.log("📥 Backend response:", data);
+    console.log("Backend response:", data);
 
     // Handle response types
     if (data.type === "question") {
@@ -60,7 +60,7 @@ async function sendMessage(text = null) {
       addSuggestions(data.suggestions || []);
     } 
     else if (data.type === "lead_ready") {
-      addMessage("✅ Lead Ready!", "bot");
+      addMessage("Lead Ready!", "bot");
       addMessage(JSON.stringify(data.data, null, 2), "bot");
     } 
     else if (data.type === "clarification") {
@@ -68,12 +68,12 @@ async function sendMessage(text = null) {
       addSuggestions(data.suggestions || []);
     } 
     else {
-      addMessage("🤔 Something unexpected happened.", "bot");
+      addMessage("Something unexpected happened.", "bot");
     }
 
   } catch (error) {
-    console.error("❌ Frontend error:", error);
-    addMessage("⚠️ Error talking to server. Check backend.", "bot");
+    console.error("Frontend error:", error);
+    addMessage("Error talking to server. Check backend.", "bot");
   }
 }
 
@@ -98,11 +98,11 @@ async function resetChat() {
   }
 
   addMessage(
-    "👋 New conversation started. Tell me what you are looking for.",
+    "New conversation started. Tell me what you are looking for.",
     "bot"
   );
 }
 
 
 // ---------- CONFIRM JS LOADED ----------
-console.log("✅ app.js loaded successfully");
+console.log("app.js loaded successfully");
