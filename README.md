@@ -234,3 +234,14 @@ This project demonstrates how LLMs can be used as controlled intelligence compon
 By embedding probabilistic language models inside deterministic orchestration, the system achieves predictability, scalability, debuggability, and production-aligned behavior.
 
 This is not just a chatbot — it is a lead-qualification engine.
+
+---
+
+## 📌 Screenshots
+<img width="1312" height="1168" alt="image" src="https://github.com/user-attachments/assets/00c7f943-3abe-4c2a-b676-47fdea2b5e85" />
+<img width="1296" height="1174" alt="image" src="https://github.com/user-attachments/assets/08be80da-cbfc-41c7-ba74-c3d198675482" />
+<img width="1280" height="1158" alt="image" src="https://github.com/user-attachments/assets/556454fd-cdbd-4673-bdcb-242c0317e696" />
+<img width="1316" height="704" alt="image" src="https://github.com/user-attachments/assets/a5685e99-0208-485a-a058-6bd0d1f661d5" />
+
+
+
